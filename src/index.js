@@ -1,6 +1,6 @@
-const generateHTML = require()
-const allEmployees = require()
-const writeToFile = require()
+const generateHTML = require("./utils/generateHTML");
+const allEmployees = require("./allEmployees");
+const writeToFile = require("./writeToFile");
 
 const init = async () => {
     const employees = await allEmployees();
