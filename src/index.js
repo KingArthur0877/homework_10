@@ -3,11 +3,12 @@ const allEmployees = require("./allEmployees");
 const writeToFile = require("./writeToFile");
 
 const init = async () => {
-    const employees = await allEmployees();
+  const employees = await allEmployees();
 
-    const generateHTML = generateHTML(employees);
+  const generatedHTML = generateHTML(employees);
 
-    writeToFile(generateHTML);
+  writeToFile(generatedHTML);
 };
 
+// Function call to initialize app
 init();
